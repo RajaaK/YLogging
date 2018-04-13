@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		928C45C020808B8800C88402 /* YLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 928C45BE20808B8800C88402 /* YLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928C45C720808BB800C88402 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928C45C620808BB800C88402 /* Logging.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		928C45BB20808B8800C88402 /* YLogging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLogging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		928C45BE20808B8800C88402 /* YLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLogging.h; sourceTree = "<group>"; };
 		928C45BF20808B8800C88402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		928C45C620808BB800C88402 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				928C45BE20808B8800C88402 /* YLogging.h */,
 				928C45BF20808B8800C88402 /* Info.plist */,
+				928C45C620808BB800C88402 /* Logging.swift */,
 			);
 			path = YLogging;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					928C45BA20808B8800C88402 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				928C45C720808BB800C88402 /* Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		928C45C420808B8800C88402 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -265,6 +271,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xvalue.YLogging;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -273,6 +280,7 @@
 		928C45C520808B8800C88402 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
